@@ -78,7 +78,7 @@
 
 
         $(document).ready(function () {
-            var top = 60;
+            var top = 40;
             var setleft;
             var setrigh;
             var readit;
@@ -91,7 +91,7 @@
             $("#top").mouseover(function () {
                 clearInterval(readit);
                 setleft =  setInterval(function () {
-                    if (top == 60) {
+                    if (top == 40) {
                         clearInterval(setleft);
                         return;
                     }
@@ -104,7 +104,7 @@
                     var a =  $(".text_div").height();
                     var b =  $(".text_div:visible").find(".text_div_p").css("top");
                     console.log(parseInt(b));
-					if (parseInt(b)<=600) {
+			if (parseInt(b)<=600) {
                         clearInterval(setrigh);
                         return;
                     }
