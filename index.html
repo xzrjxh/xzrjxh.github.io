@@ -101,17 +101,15 @@
             $("#botton").mouseover(function () {
                 clearInterval(readit);
                 setrigh =  setInterval(function () {
-                    var a =  $(".text_div").height();
                     var b =  $(".text_div:visible").find(".text_div_p").css("top");
-                    console.log(parseInt(b));
-			if (parseInt(b)<=600) {
+                    var c=document.body.clientHeight;
+                    if (parseInt(b)<=c) {
                         clearInterval(setrigh);
                         return;
                     }
                     $(".text_div:visible").css("top", (top--));
                 },10);
             });
-
         });
 	</script>
 
