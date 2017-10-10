@@ -82,11 +82,13 @@ a{
 	}
 	#home{
 		position: absolute;
-		top:8px;
+		top:2%;
 		background-color: #80b2d6;
 		width: 100%;
 		height: 35px;
 		z-index: 3;
+		margin-right: auto;
+		margin-left: auto;
 	}
 	#home>ul>li{
 		position:relative;
@@ -110,5 +112,34 @@ a{
 		padding-left: 4%;
 		padding-right:4%;
 		overflow: hidden;
+	}
+}
+@media only screen and (max-width: 710px) {
+	#home{
+		position: absolute;
+		background-color: #80b2d6;
+		width: 100%;
+		height: 35px;
+		z-index: 3;
+	}
+	#home>ul>li{
+		position:relative;
+		top: -20px;
+		left:-30px;
+		float: left;
+		list-style: none;
+		margin: 0px;
+		padding-left: 2px;
+		padding-right: 2px;
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+	#home>ul>li>a{
+		font-size: 17px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	#home>ul>li>a{
+		font-size: 14px;
 	}
 }
